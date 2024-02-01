@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Validate password
       if (!password.value.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/)) {
-        alert('Password should be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character');
+        alert('Password should be at least 6 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character');
         return;
       }
   
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   
       // Validate date of birth
-      if (!dob.value.match(/^\d{4}-\d{2}-\d{2}$/)) {
+      if (!dob.value.match(/^\d{2}-\d{2}-\d{4}$/)) {
         alert('Please enter a valid date of birth in the format YYYY-MM-DD');
         return;
       }
